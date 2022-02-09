@@ -1,0 +1,13 @@
+#This is a google deploy for a HA server application using a debian OS with Apache2 web server.
+#NOTE: DO NOT DEPLOY THIS IN PRODUCTION USE: 
+#This deployment requires HTTPS, TLS, SSL and additional securities for application.
+#This deploy is for a proof of concept. 
+
+# Apache2 download.
+#First run update on the new debian system using Google CLI by SSH connection.
+sudo apt update
+
+#Run Apache2 download, once complete using loadbalancer external IP connect to static page.
+sudo sudo apt install apache2
+
+#Note this will have to be done on all instances of in the MIG.
