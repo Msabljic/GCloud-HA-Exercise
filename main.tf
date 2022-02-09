@@ -66,7 +66,7 @@ resource "google_compute_backend_service" "end" {
   project                  = google_compute_network.Vnet1.project
   provider                 = google-beta
   protocol                 = "HTTP"
-  port_name                = "my-port"
+  port_name                = "http-port"
   load_balancing_scheme    = "EXTERNAL"
   timeout_sec              = 10
   enable_cdn               = true
